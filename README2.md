@@ -168,13 +168,34 @@ origin-https	https://github.com/andrey-borue/devops-netology.git (push)
 
 ## <h2 style="color:red;">ОТВЕТ 3</h2> ##
 
-1. 
+1. Переключаемся на ветку main **git switch main**  
+2. Выводим историю коммитов **git log --oneline --decorate --graph**  
+3. Переключаемся по хешу на коммит "Prepare to delete and move"  **git checkout c88ae7e**. Попытка неудачна.   
+4. Создаём файл README2.md, добавляем файлы в локальный репозиторий. **git add .** а заодно и файлы скриншотов по текущему заданию.  
+5. Переходим на коммит "Prepare to delete and move" **git checkout c88ae7e**. Теперь успешно.  
+6. Создаём ветку fix и отправляем в github. **git switch -c fix** **git push**  
+7. Изменяем README.md.
+7. Смотрим диаграммы веток и вывод команды **git log --oneline --decorate --graph**.  
+
+**Выводы**  
+
+Ветка fix  создана от коммита c88ae7e — это видно по тому, что после него сразу идёт новый коммит 6c0f9d1.  
+Ветка fix указывает на последний коммит 6c0f9d1 и он же есть в origin/fix, значит ветка уже запушена на удалённый репозиторий.  
+main находится в другой линии истории и не содержит новый коммит из fix.  
+В --graph --all видно расхождение веток: main идёт своей цепочкой, а fix отделяется от Prepare to delete and move.    
+
+8. Возвращаемся в ветку main и делаем скриншоты.
+
 
 Скриншоты.  
 ![Задание 3. Скриншот 1](screenshots2/scr3_1.png)
-![Задание 3. Скриншот 1](screenshots2/scr3_2.png)
-![Задание 3. Скриншот 1](screenshots2/scr3_3.png)
-![Задание 3. Скриншот 1](screenshots2/scr3_4.png)
+![Задание 3. Скриншот 2](screenshots2/scr3_2.png)
+![Задание 3. Скриншот 3](screenshots2/scr3_3.png)
+![Задание 3. Скриншот 4](screenshots2/scr3_4.png)
+![Задание 3. Скриншот 5](screenshots2/scr3_5.png)
+![Задание 3. Скриншот 6](screenshots2/scr3_6.png)
+![Задание 3. Скриншот 7](screenshots2/scr3_network1.png)
+![Задание 3. Скриншот 8](screenshots2/scr3_network2.png)
 
 
 
@@ -197,11 +218,14 @@ origin-https	https://github.com/andrey-borue/devops-netology.git (push)
 
 *В качестве результата работы по всем заданиям приложите ссылки на ваши репозитории в GitHub, GitLab и Bitbucket*.  
  
-## <h2 style="color:red;">ОТВЕТ 3</h2> ##
+## <h2 style="color:red;">ОТВЕТ 4</h2> ##
 
-1. 
+1. Использую Cursor вместо PyCharm.  
+2. Открываем вкладку "Source Control". Появляется слева.    
+3. Измененяем файл  README2.md — он автоматически появляется в разделе Changes. Файлы отображаются с индикатором изменений слева от имени.  
+4. Для коммита вводим сообщение коммита и нажимаем кнопку COMMIT сверху слеву.
 
 Скриншоты.  
 ![Задание 4. Скриншот 1](screenshots2/scr4_1.png)
-![Задание 4. Скриншот 1](screenshots2/scr4_2.png)
-![Задание 4. Скриншот 1](screenshots2/scr4_3.png)
+![Задание 4. Скриншот 2](screenshots2/scr4_2.png)
+
